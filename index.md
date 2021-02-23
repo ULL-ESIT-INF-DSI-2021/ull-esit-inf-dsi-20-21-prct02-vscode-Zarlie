@@ -8,3 +8,10 @@ En esta práctica se lleva a cabo la instalación y configuración del entorno d
 
 ## Objetivos
 - Configurar VSC
+
+
+### **Instalación del Visual Studio Code** 
+Como ya hemos mencionado, esta práctica se basará en configurar el editor Visual Studio Code, que nos permitirá, entre muchas otras cosas, editar nuestro código fuente así como depurarlo. Para comenzar a familiarizarnos con este entorno, comenzaremos con instalarlo en nuestra máquina:
+```
+zarlie@melinux-VirtualBox:~$ sudo apt install code
+```
