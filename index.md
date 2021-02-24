@@ -48,7 +48,7 @@ Host iaas-dsi36
   HostName iaas-dsi36
   User usuario
 ```
-Como se puede observar, en mi caso ya la tenía añadida, pero de no tenerla simplemente bastaría con seguir el mismo esquema, introduciendo los valores que introdujimos en un momeno inicial en nuestra máquina virtual del IaaS:
+Como se puede observar, en mi caso ya la tenía añadida junto a unas cuantas más correspondientes a otras asignaturas, pero en caso de no tenerla simplemente bastaría con seguir el mismo esquema, introduciendo los valores que introdujimos en un momeno inicial en nuestra máquina virtual del IaaS:
 ```
 Host iaas-dsiXX
   HostName iaas-dsiXX
@@ -64,7 +64,7 @@ iaas-dsi36
 
 
 ### **Extensión de LiveShare: Sesiones colaborativas** 
-
+En este apartado, nos familiarizaremos con otra extensión del VSCode: Live Share Extension Pack. Esta extensión es muy útil de cara a proyectos colaborativos ya sea de pocas o muchas personas, ya que nos permite compartir nuestro espacio de trabajo y todo el código fuente
 
 
 
@@ -77,3 +77,4 @@ iaas-dsi36
 - [SSH](https://es.wikipedia.org/wiki/Secure_Shell)
 - [VSCode Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery)
 - [Remote SSH: Tips and Tricks](https://code.visualstudio.com/blogs/2019/10/03/remote-ssh-tips-and-tricks)
+- [Live Share Extension Pack](https://visualstudio.microsoft.com/es/services/live-share/)
