@@ -28,7 +28,8 @@ EL argumento *--classic* lo añadimos para que Snapcraft se instale sin las func
 ### **Conexión SSH** 
 Una vez hemos instalado el editor de código fuente, procederemos a hacer ciertas configuraciones que nos serán útiles de cara a trabajar en este enorno en las próximas prácticas puesto que nos va a facilitar mucho el trabajo.  
 En primer lugar, queremos poder conectarnos a nuestra máquina virtual del IaaS desde cualquier máquina, independientemente del lugar en el que nos encontremos; para ello, debemos configurar VSCode para poder conectarnos por SSH como bien vimos en la [**práctica anterior**](https://ull-esit-inf-dsi-2021.github.io/ull-esit-inf-dsi-20-21-prct01-iaas-Zarlie/), debiendo estar siempre conectados a la VPN de la ULL, ya que de lo contrario no será posible realizar dicha conexión.  
-Abrimos la aplicación de VSCode y localizamos el buscador en la barra lateral izquierda con el símbolo de la lupa, ahí deberemos buscar la extensión ***Remote - SSH*** y le daremos al botón azul que dice *Install* (este proceso sólo tardará unos segundos). Una vez instalado, pulsaremos la tecla *F1* o bien la combinación de teclas *Ctrl + Shift + P*, eso nos abrirá un menú con varias de las funcionalidades que tenemos a instaladas en nuestro sistema; teclearemos *ssh* y de entre todas las opciones haremos click sobre *Connect to Host...* y, si seguimos todos los pasos correctamente en la práctica anterior, nos debería de aparecer el nombre de nuestra máquina virtual en el menú desplegable como ***iaas-dsiXX***:
+
+Abrimos la aplicación de VSCode y localizamos el buscador en la barra lateral izquierda con el símbolo de la lupa, ahí deberemos buscar la extensión **Remote - SSH** y le daremos al botón azul que dice *Install* (este proceso sólo tardará unos segundos). Una vez instalado, pulsaremos la tecla *F1* o bien la combinación de teclas *Ctrl + Shift + P*, eso nos abrirá un menú con varias de las funcionalidades que tenemos a instaladas en nuestro sistema; teclearemos *ssh* y de entre todas las opciones haremos click sobre *Connect to Host...* y, si seguimos todos los pasos correctamente en la práctica anterior, nos debería de aparecer el nombre de nuestra máquina virtual en el menú desplegable como ***iaas-dsiXX***:
 ```
 CyA
 Admin
@@ -38,13 +39,13 @@ Configure SSH Hosts...
 ```
 En caso de que no nos aparezca entre las opciones, sólo debemos pulsar sobre la última opción *Configure SSH Hosts...* y en el menú desplegable que nos aparece con los distintos ficheros a configurar seleccionamos el *~/.ssh/config* donde nos aparecerán las configuraciones de todas las máquinas que hayamos añadido en algún momento dado:
 ```
-Host 10.6.131.85
-  HostName CyA
+Host CyA
+  HostName 10.6.131.85
   User usuario
   
-Host 10.6.129.97
-  HostName Admin
-  User usuario
+Host Admin
+  HostName 10.6.129.97
+  User zarlie
   
 Host iaas-dsi36
   HostName iaas-dsi36
@@ -57,7 +58,8 @@ Host iaas-dsiXX
   User usuario
 ```
 Una vez configurado el fichero, podremos comprobar si los cambios se han guardado correctamente con tan sólo volver a realizar los pasos que hicimos anteriormente, esto es: pulsaremos la tecla *F1* o bien *Ctrl + Shift + P*, escribimos *ssh* y volvemos a hacer click sobre la opción *Connect to Host...* y ahora deberíamos de visualizar el nombre de nuestra máquina.  Si pulsamos sobre ella, se debería de abrir una nueva ventana de VSCode donde se comenzara a establecer nuestra conexión SSH con la máquina virtual del IaaS, en la parte inferior del lateral izquierdo de la aplicación, debería de aparecer un recuadro verde con las letras ***Opening Remote...*** tardando apenas unos segundos en completarse la conexión.  
-En caso de que quisiéramos comprobar que, efectivamente se ha completado la conexión SSH satisfactoriamente, tenemos 2 formas: se puede comprobar a simple vista dentro del entorno de VSCode volviendo a ver el recuadro verde pero esta vez con las letras ***SSH: iaas-dsi36*** o bien podemos hacerlo abriendo una terminal en VSCode pulsando en la barra superior sobre *Terminal* o bien mediante la combinación de teclas *Ctrl + SHift +* ' y ejecutamos el siguiente comando:
+
+En caso de que quisiéramos comprobar que, efectivamente se ha completado la conexión SSH satisfactoriamente, tenemos 2 formas de verlo: se puede comprobar a simple vista dentro del entorno de VSCode volviendo a ver el recuadro verde pero esta vez con las letras ***SSH: iaas-dsi36*** o bien podemos hacerlo abriendo una terminal en VSCode pulsando en la barra superior sobre *Terminal* o bien mediante la combinación de teclas *Ctrl + SHift +* ' y ejecutamos el siguiente comando:
 ```
 [~()]$ hostname
 iaas-dsi36
@@ -65,9 +67,9 @@ iaas-dsi36
 ```
 
 ### **Extensión de LiveShare: Sesiones colaborativas** 
-En este apartado, nos familiarizaremos con otra extensión del VSCode: Live Share Extension Pack. Esta extensión es muy útil de cara a proyectos colaborativos ya sea de pocas o muchas personas, ya que nos permite compartir nuestro espacio de trabajo desde cualquier lugar así como editar y depurar todo el código fuente en tiempo real. Entre sus diversas funcionalidades incluye la posibilidad de hablar por su chat incorporado o bien mediante llamadas de voz.  
+En este apartado, nos familiarizaremos con otra extensión del VSCode: **Live Share Extension Pack**. Esta extensión es muy útil de cara a proyectos colaborativos ya sea de pocas o muchas personas, ya que nos permite compartir nuestro espacio de trabajo desde cualquier lugar así como editar y depurar todo el código fuente en tiempo real. Entre sus diversas funcionalidades incluye la posibilidad de hablar por su chat incorporado o bien mediante llamadas de voz.  
 
-Para instalar esta extensión tenemos que seguir los mismos pasos que ya realizamos previamente al instalar la extensión de SSH: en la aplicación de VSCode localizamos el buscador en la barra lateral izquierda con el símbolo de la lupa y escribimos ***Live Share*** e instalamos las principales extensiones, estas son: *Live Share*, *Live Share Audio* y *Live Share Extension Pack*. Si queremos indagar más sobre otras extensiones de utilidad de esta herramienta podemos hacerlo desde la página [***Live Share Extension Pack***](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack).  
+Para instalar esta extensión tenemos que seguir los mismos pasos que ya realizamos previamente al instalar la extensión de SSH: en la aplicación de VSCode localizamos el buscador en la barra lateral izquierda con el símbolo de la lupa y escribimos ***Live Share*** e instalamos las principales extensiones, estas son: *Live Share*, *Live Share Audio* y *Live Share Extension Pack*. Si queremos indagar más sobre otras extensiones de utilidad de esta herramienta podemos hacerlo desde la página [**Live Share Extension Pack**](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack).  
 
 Una vez las hayamos instalado debemos recargar la ventana del VSC. Ahora, abriremos nuestro proyecto como siempre y veremos que nos ha aparecido un nuevo símbolo en la barra lateral izquierda con forma de flecha. Si pulsamos sobre dicho símbolo nos llevará a una nueva pestaña donde podremos comenzar una sesión colaborativa iniciándola nosotros o uniéndonos a una ya existente.  
 En esta ocasión inciaremos nosotros mismos una nueva sesión de colaboración, esto lo haremos pulsando el botón de *Share* o bien en la barra inferior púrpura donde pone *Live Share*. Si es la primera vez que realizamos una sesión colaborativa, al pulsar sobre alguna de estas opciones nos pedirá iniciar sesión mediante una cuenta de Github o de Microsoft; elegimos la opción que más nos convenga y seguimos los pasos que nos indican sus respectivas páginas.
