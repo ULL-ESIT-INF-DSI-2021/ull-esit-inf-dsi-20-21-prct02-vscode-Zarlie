@@ -101,7 +101,7 @@ En definitiva, se trata esencialmente de un superconjunto de JavaScript que aña
 ### **Primer proyecto en TypeScript** 
 Antes de comenzar con nuestro primer proyecto, debemos instalar la extensión ESLint. Esta extensión nos permitirá realizar comprobaciones de estilo sobre ficheros que incluyen código fuente en JavaScript y TypeScript. Para ello, nos posicionaremos una vez más en la pestaña de extensiones en la barra lateral izquierda del VSC e introduciremos *ESLint* en el buscador y pulsaremos en *Install*, al cabo de unos segundos estará lista para usar.  
 
-Ahora pasaremos a instalar el compilador de TypeScript mediante el gestor de paquetes NPM (Node Package Manager), ejecutamos el comando con la opción --global para asegurarnos de que se va a instalar el paquete de manera global:
+Ahora pasaremos a instalar el compilador de TypeScript mediante el gestor de paquetes NPM (Node Package Manager) en nuestra máquina virtual; pulsamos *F1* para abrir una terminal en VSC y ejecutamos el comando con la opción --global para asegurarnos de que se va a instalar el paquete de manera global:
 ```
 [~()]$npm install --global typescript
 
@@ -117,6 +117,35 @@ npm notice
 [~()]$tsc --version
 Version 4.1.5
 ```
+Tras haber instalado el compilador de TypeScript, comenzaremos nuestro pequeño proyecto. Para ello, bajo nuestro directorio */home/usuario* crearemos una carpeta con el nombre *hello-world*. Nos posicionamos en dicho directorio y ejecutamos el comando *npm init* el cual activará la inicialización de nuestro proyecto creando el fichero *package.json* que estabñecerá las dependencias de desarrollo y ejecución del proyecto a modo de paquetes de los que depende el proyecto actual:
+```
+[~()]$pwd
+/home/usuario
+[~()]$mkdir hello-world
+[~()]$cd hello-world/
+[~/hello-world()]$npm init --yes
+Wrote to /home/usuario/hello-world/package.json:
+
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+[~/hello-world()]$ls -lrtha
+total 12K
+drwxr-xr-x 12 usuario usuario 4,0K feb 26 01:08 ..
+-rw-rw-r--  1 usuario usuario  225 feb 23 19:08 package.json
+drwxrwxr-x  4 usuario usuario 4,0K feb 23 19:12 .
+```
+
 
 
 
