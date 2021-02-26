@@ -151,7 +151,8 @@ Acto seguido, en la terminal de la máquina virtual procederemos a crear el fich
 - **Target**: Indicamos que el código que generemos sea compatible con uno de los últimos estándares de JavaScript, el *ES2018*
 - **outDir**: Se indica que el directorio donde se van a colocar los archivos JavaScript, ".js", una vez transpilados sea *dist*
 - **rootDir**: Especificamos dónde están los archivos fuente, con el código  TypeScript, ".ts", que debe ser traducido, en *src*
-- **module**: Se establece que el estándar para cargar código desde ficheros independientes sea *CommonJS*
+- **module**: Se establece que el estándar para cargar código desde ficheros independientes sea *CommonJS*  
+
 ```
 [~/hello-world()]$touch tsconfig.json
 [~/hello-world()]$cat tsconfig.json 
