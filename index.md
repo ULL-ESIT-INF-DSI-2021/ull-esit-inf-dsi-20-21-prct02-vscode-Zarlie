@@ -17,18 +17,18 @@ Como ya hemos mencionado, esta práctica se basará en configurar el editor Visu
 ```
 zarlie@melinux-VirtualBox:~$ sudo apt install code
 ```
-Para instalar el programa, podemos hacerlo o bien mediante el ya conocido *apt* o también podríamos hacer uso del comando *snap*, el cual es equivalente al comando *apt*; este se usa para instalar software desde la Snap Store, en lugar de paquetes desde los repositorios Apt:
+Para instalar el programa, podemos hacerlo o bien mediante el ya conocido *apt* o también podríamos hacer uso del comando *snap*, el cual es su equivalente; este se usa para instalar software desde la Snap Store, en lugar de paquetes desde los repositorios Apt:
 ```
 zarlie@melinux-VirtualBox:~$ sudo snap install code --classic
 ```
-EL argumento *--classic* lo añadimos para que Snapcraft se instale sin las funciones de banco de pruebas estrictas que normalmente se usan en las Snaps. Snapcraft requiere este argumento, ya que necesita más acceso privilegiado a su sistema para empaquetar las aplicaciones de forma fiable.
+EL argumento *--classic* lo añadimos para que Snapcraft se instale sin las funciones de banco de pruebas estrictas que normalmente se usan en las Snaps. Snapcraft requiere este argumento ya que necesita más acceso privilegiado a su sistema para empaquetar las aplicaciones de forma fiable.
 
 
 ## Primeras configuraciones de Visual Studio Code
 ### **Conexión SSH** 
-Una vez hemos instalado el editor de código fuente, procederemos a hacer ciertas configuraciones que nos serán útiles de cara a trabajar en este enorno en un futuro próximo, puesto que nos facilitar mucho el trabajo.  
-En primer lugar, queremos poder conectarnos a nuestra máquina virtual del IaaS desde cualquier máquina independientemente el lugar en el que nos encontremos, para ello deberemos configurar VSCode para poder conectarnos por SSH como bien vimos en la práctica anterior, debiendo estar siempre conectados a la VPN de la ULL, ya que de lo contrario no será posible realizar dicha conexión.  
-Abrimos la aplicación de VSCode y localizamos el buscador en la barra lateral izquierda con el símbolo de la lupa, ahí deberemos buscar la extensión ***Remote - SSH*** y le daremos al botón azul que dice *Install*, este proceso sólo tardará unos segundos. Una vez instalado, pulsaremos la tecla *F1* o bien *Ctrl + Shift + P*, eso nos abrirá un menú con varias de las funcionalidades que tenemos a instaladas en nuestro sistema; teclearemos *ssh* y de entre todas las opciones haremos click sobre *Connect to Host...* y, si seguimos todos los pasos correctamente en la práctica anterior, nos debería de aparecer el nombre de nuestra máquina virtual en el menú desplegable como ***iaas-dsiXX***:
+Una vez hemos instalado el editor de código fuente, procederemos a hacer ciertas configuraciones que nos serán útiles de cara a trabajar en este enorno en las próximas prácticas puesto que nos va a facilitar mucho el trabajo.  
+En primer lugar, queremos poder conectarnos a nuestra máquina virtual del IaaS desde cualquier máquina, independientemente del lugar en el que nos encontremos; para ello, debemos configurar VSCode para poder conectarnos por SSH como bien vimos en la [**práctica anterior**](https://ull-esit-inf-dsi-2021.github.io/ull-esit-inf-dsi-20-21-prct01-iaas-Zarlie/), debiendo estar siempre conectados a la VPN de la ULL, ya que de lo contrario no será posible realizar dicha conexión.  
+Abrimos la aplicación de VSCode y localizamos el buscador en la barra lateral izquierda con el símbolo de la lupa, ahí deberemos buscar la extensión ***Remote - SSH*** y le daremos al botón azul que dice *Install* (este proceso sólo tardará unos segundos). Una vez instalado, pulsaremos la tecla *F1* o bien la combinación de teclas *Ctrl + Shift + P*, eso nos abrirá un menú con varias de las funcionalidades que tenemos a instaladas en nuestro sistema; teclearemos *ssh* y de entre todas las opciones haremos click sobre *Connect to Host...* y, si seguimos todos los pasos correctamente en la práctica anterior, nos debería de aparecer el nombre de nuestra máquina virtual en el menú desplegable como ***iaas-dsiXX***:
 ```
 CyA
 Admin
