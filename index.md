@@ -9,15 +9,15 @@ En esta práctica se lleva a cabo la instalación y configuración del entorno d
 ## Objetivos
 - Configurar el entorno de Visual Studio Code
 - Aprender a trabajar con diferentes extensiones como Remote-SSH para conectarnos de forma remota a nuestra máquina virtual o Live Share para realizar sesiones colaborativas
-- Familiarizarnos con el lenguaje de programación TypeScript realizandp un primer proyecto 
+- Familiarizarnos con el lenguaje de programación TypeScript realizando un primer proyecto: Hola Mundo 
 
 
 ## Instalación del Visual Studio Code 
-Como ya hemos mencionado, esta práctica se basará en configurar el editor Visual Studio Code, que nos permitirá, entre muchas otras cosas, editar nuestro código fuente así como depurarlo. Para comenzar a familiarizarnos con este entorno, comenzaremos con instalarlo en nuestra máquina si aún no lo habíamos hecho anteriormente:
+Como ya hemos mencionado, esta práctica se basará en configurar el editor Visual Studio Code para la realización de un pequeño proyecto inicial, que nos permitirá, entre muchas otras cosas, editar nuestro código fuente así como depurarlo. Para empezar a familiarizarnos con este entorno, comenzaremos por instalarlo en nuestra máquina si aún no lo habíamos hecho anteriormente:
 ```
 zarlie@melinux-VirtualBox:~$ sudo apt install code
 ```
-O también podríamos hacer uso del comando *snap*, el cual es equivalente al comando de uso ms frecuente *apt*, este se usa para instalar software desde la Snap Store, en lugar de paquetes desde los repositorios Apt:
+Para instalar el programa, podemos hacerlo o bien mediante el ya conocido *apt* o también podríamos hacer uso del comando *snap*, el cual es equivalente al comando *apt*; este se usa para instalar software desde la Snap Store, en lugar de paquetes desde los repositorios Apt:
 ```
 zarlie@melinux-VirtualBox:~$ sudo snap install code --classic
 ```
