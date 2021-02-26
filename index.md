@@ -10,7 +10,7 @@ En esta práctica se lleva a cabo la instalación y configuración del entorno d
 - Configurar VSC
 
 
-## **Instalación del Visual Studio Code** 
+## Instalación del Visual Studio Code 
 Como ya hemos mencionado, esta práctica se basará en configurar el editor Visual Studio Code, que nos permitirá, entre muchas otras cosas, editar nuestro código fuente así como depurarlo. Para comenzar a familiarizarnos con este entorno, comenzaremos con instalarlo en nuestra máquina si aún no lo habíamos hecho anteriormente:
 ```
 zarlie@melinux-VirtualBox:~$ sudo apt install code
@@ -22,7 +22,7 @@ zarlie@melinux-VirtualBox:~$ sudo snap install code --classic
 EL argumento *--classic* lo añadimos para que Snapcraft se instale sin las funciones de banco de pruebas estrictas que normalmente se usan en las Snaps. Snapcraft requiere este argumento, ya que necesita más acceso privilegiado a su sistema para empaquetar las aplicaciones de forma fiable.
 
 
-## **Primeras configuraciones de Visual Studio Code** 
+## Primeras configuraciones de Visual Studio Code
 ### **Conexión SSH** 
 Una vez hemos instalado el editor de código fuente, procederemos a hacer ciertas configuraciones que nos serán útiles de cara a trabajar en este enorno en un futuro próximo, puesto que nos facilitar mucho el trabajo.  
 En primer lugar, queremos poder conectarnos a nuestra máquina virtual del IaaS desde cualquier máquina independientemente el lugar en el que nos encontremos, para ello deberemos configurar VSCode para poder conectarnos por SSH como bien vimos en la práctica anterior, debiendo estar siempre conectados a la VPN de la ULL, ya que de lo contrario no será posible realizar dicha conexión.  
@@ -94,7 +94,7 @@ Como podemos observar, en *Session Details* nos detalla los participantes que ha
 
 
 
-## **Introducción a TypeScript** 
+## Introducción a TypeScript 
 TypeScript es un lenguaje de programación de alto nivel libre y de código abierto que implementa muchos de los mecanismos más habituales de la programación orientada a objetos; la característica fundamental es que compila en JavaScript nativo, por lo que se puede usar en todo proyecto donde se esté usando JavaScript.  
 En definitiva, se trata esencialmente de un superconjunto de JavaScript que añade tipos estáticos y objetos basados en clases.
 
