@@ -217,3 +217,4 @@ Hola Mundo
 - [Introducción a TypeScript](https://desarrolloweb.com/articulos/introduccion-a-typescript.html)
 - [¿Qué es npm?](https://www.hostinger.es/tutoriales/que-es-npm#:~:text=Si%20ya%20tienes%20Node%20y,la%20inicializaci%C3%B3n%20de%20tu%20proyecto.&text=Este%20comando%20funciona%20como%20una,json%20de%20un%20proyecto.)
 - [Configurar un proyecto para usar TypeScript](https://desarrolloweb.com/articulos/configurar-proyecto-typescript.html)
+- [Diferencias entre compilación y transpilación](https://ingenieriadesoftware.es/diferencia-transpilacion-compilacion/)
