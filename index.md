@@ -7,7 +7,9 @@ En esta práctica se lleva a cabo la instalación y configuración del entorno d
 
 
 ## Objetivos
-- Configurar VSC
+- Configurar el entorno de Visual Studio Code
+- Aprender a trabajar con diferentes extensiones como Remote-SSH para conectarnos de forma remota a nuestra máquina virtual o Live Share para realizar sesiones colaborativas
+- Familiarizarnos con el lenguaje de programación TypeScript realizandp un primer proyecto 
 
 
 ## Instalación del Visual Studio Code 
@@ -201,7 +203,8 @@ Hola Mundo
 
 
 ## Conclusiones
-
+La realización de esta práctica ha sido bastante fácil y llevadera puesto que ya había trabajado un par de años con el editor de VSCode para la realización de los diversos proyectos de las prácticas del resto de asignaturas. Tanto las conexiones remotas con SSH o las sesiones colaborativas haciendo uso de Live Share me parecen de suma importancia en cualquier proyecto tanto profesional como personal puesto que pueden sernos de gran ayuda para afrontarlo y llevarlo a cabo satisfactoriamente.
+Por otro lado, en lo que respecta a TypeScript nunca había realizado ningún proyecto en este lenguaje de programación pero ha sido bastante intuitivo y fácil de entender, desde la sintaxis hasta la compilación del código.
 
 
 ## Bibliografía
