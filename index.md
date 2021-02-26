@@ -62,9 +62,62 @@ iaas-dsi36
 [~()]$
 ```
 
-
 ### **Extensión de LiveShare: Sesiones colaborativas** 
-En este apartado, nos familiarizaremos con otra extensión del VSCode: Live Share Extension Pack. Esta extensión es muy útil de cara a proyectos colaborativos ya sea de pocas o muchas personas, ya que nos permite compartir nuestro espacio de trabajo y todo el código fuente
+En este apartado, nos familiarizaremos con otra extensión del VSCode: Live Share Extension Pack. Esta extensión es muy útil de cara a proyectos colaborativos ya sea de pocas o muchas personas, ya que nos permite compartir nuestro espacio de trabajo desde cualquier lugar así como editar y depurar todo el código fuente en tiempo real. Entre sus diversas funcionalidades incluye la posibilidad de hablar por su chat incorporado o bien mediante llamadas de voz.  
+
+Para instalar esta extensión tenemos que seguir los mismos pasos que ya realizamos previamente al instalar la extensión de SSH: en la aplicación de VSCode localizamos el buscador en la barra lateral izquierda con el símbolo de la lupa y escribimos ***Live Share*** e instalamos las principales extensiones, estas son: *Live Share*, *Live Share Audio* y *Live Share Extension Pack*. Si queremos indagar más sobre otras extensiones de utilidad de esta herramienta podemos hacerlo desde la página [***Live Share Extension Pack***](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack).  
+
+Una vez las hayamos instalado debemos recargar la ventana del VSC. Ahora, abriremos nuestro proyecto como siempre y veremos que nos ha aparecido un nuevo símbolo en la barra lateral izquierda con forma de flecha. Si pulsamos sobre dicho símbolo nos llevará a una nueva pestaña donde podremos comenzar una sesión colaborativa iniciándola nosotros o uniéndonos a una ya existente.  
+En esta ocasión inciaremos nosotros mismos una nueva sesión de colaboración, esto lo haremos pulsando el botón de *Share* o bien en la barra inferior púrpura donde pone *Live Share*. Si es la primera vez que realizamos una sesión colaborativa, al pulsar sobre alguna de estas opciones nos pedirá iniciar sesión mediante una cuenta de Github o de Microsoft; elegimos la opción que más nos convenga y seguimos los pasos que nos indican sus respectivas páginas.
+
+Habiendo iniciado sesión nos debe aparecer en el lateral izquierdo los detalles de nuestra sesión:
+```
+ᐯ SESSION DETAILS
+  ᐯ Participants (0)
+     Invite particpants...
+  ᐯ Shares Servers (0)
+     Share server...
+  ᐯ Shared Terminals (0)
+     Share terminal...
+    Comments (0)
+  ᐯ Audio Call (0)
+     Start audio call...
+```
+Como podemos observar, en *Session Details* nos detalla los participantes que hay en la sesión, los servidores y terminales que estamos compartiendo, así como los comentarios que nos hayan podido hacer y la opción de comenzar una llamada de voz. Por otro lado, más abajo en la sección de *Contacts* nos da la posibilidad de invitar a que uno o más participantes se unan a esta sesión:
+```
+ᐯ CONTACTS
+  ᐯ Recent contacts (0)
+     Invite particpants...
+  ᐯ Sugested contacts (0)
+     null...
+```
+
+
+
+## **Introducción a TypeScript** 
+TypeScript es un lenguaje de programación de alto nivel libre y de código abierto que implementa muchos de los mecanismos más habituales de la programación orientada a objetos; la característica fundamental es que compila en JavaScript nativo, por lo que se puede usar en todo proyecto donde se esté usando JavaScript.  
+En definitiva, se trata esencialmente de un superconjunto de JavaScript que añade tipos estáticos y objetos basados en clases.
+
+### **Primer proyecto en TypeScript** 
+Antes de comenzar con nuestro primer proyecto, debemos instalar la extensión ESLint. Esta extensión nos permitirá realizar comprobaciones de estilo sobre ficheros que incluyen código fuente en JavaScript y TypeScript. Para ello, nos posicionaremos una vez más en la pestaña de extensiones en la barra lateral izquierda del VSC e introduciremos *ESLint* en el buscador y pulsaremos en *Install*, al cabo de unos segundos estará lista para usar.  
+
+Ahora pasaremos a instalar el compilador de TypeScript mediante el gestor de paquetes NPM (Node Package Manager), ejecutamos el comando con la opción --global para asegurarnos de que se va a instalar el paquete de manera global:
+```
+[~()]$npm install --global typescript
+
+added 1 package, and audited 2 packages in 3s
+
+found 0 vulnerabilities
+npm notice
+npm notice New patch version of npm available! 7.5.3 -> 7.5.6
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v7.5.6
+npm notice Run npm install -g npm@7.5.6 to update!
+npm notice
+
+[~()]$tsc --version
+Version 4.1.5
+```
+
 
 
 
@@ -78,3 +131,5 @@ En este apartado, nos familiarizaremos con otra extensión del VSCode: Live Shar
 - [VSCode Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery)
 - [Remote SSH: Tips and Tricks](https://code.visualstudio.com/blogs/2019/10/03/remote-ssh-tips-and-tricks)
 - [Live Share Extension Pack](https://visualstudio.microsoft.com/es/services/live-share/)
+- [TypeScript](https://es.wikipedia.org/wiki/TypeScript)
+- [Introducción a TypeScript](https://desarrolloweb.com/articulos/introduccion-a-typescript.html)
