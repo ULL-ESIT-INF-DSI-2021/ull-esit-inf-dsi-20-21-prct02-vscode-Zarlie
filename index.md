@@ -117,7 +117,7 @@ npm notice
 [~()]$tsc --version
 Version 4.1.5
 ```
-Tras haber instalado el compilador de TypeScript, comenzaremos nuestro pequeño proyecto. Para ello, bajo nuestro directorio */home/usuario* crearemos una carpeta con el nombre *hello-world*. Nos posicionamos en dicho directorio y ejecutamos el comando *npm init* el cual activará la inicialización de nuestro proyecto creando el fichero *package.json* que estabñecerá las dependencias de desarrollo y ejecución del proyecto a modo de paquetes de los que depende el proyecto actual:
+Tras haber instalado el compilador de TypeScript, comenzaremos nuestro pequeño proyecto. Para ello, bajo nuestro directorio */home/usuario* crearemos una carpeta con el nombre *hello-world*. Nos posicionamos en dicho directorio y ejecutamos el comando *npm init* el cual activará la inicialización de nuestro proyecto creando el fichero *package.json* que establecerá las dependencias de desarrollo y ejecución del proyecto a modo de paquetes de los que depende el proyecto actual:
 ```
 [~()]$pwd
 /home/usuario
@@ -145,11 +145,62 @@ drwxr-xr-x 12 usuario usuario 4,0K feb 26 01:08 ..
 -rw-rw-r--  1 usuario usuario  225 feb 23 19:08 package.json
 drwxrwxr-x  4 usuario usuario 4,0K feb 23 19:12 .
 ```
+Una vez inicializado el proyecto, debemos abrirlo en nuestro espacio de trabajo de VSC para trabajar más cómodamente. Para ello, en el menú de la barra superior pulsaremos sobre *File* y luego en *Open Folder* y se deplegará un menú con los directorios de nuestra máquina virtual; buscamos el directorio *hello-world* y lo seleccionamos para así poder ver el contenido del directorio instanciado en VSCode.  
+
+Acto seguido, en la terminal de la máquina virtual procederemos a crear el fichero *tsconfig.json* bajo el directorio *hello-world* donde especificaremos las opciones del compilador de TypeScript indicándole lo siguiente en los diversos campos:
+- **Target**: Indicamos que el código que generemos sea compatible con uno de los últimos estándares de JavaScript, el *ES2018*
+- **outDir**: Se indica que el directorio donde se van a colocar los archivos JavaScript, ".js", una vez transpilados sea *dist*
+- **rootDir**: Especificamos dónde están los archivos fuente, con el código  TypeScript, ".ts", que debe ser traducido, en *src*
+- **module**: Se establece que el estándar para cargar código desde ficheros independientes sea *CommonJS*
+```
+[~/hello-world()]$touch tsconfig.json
+[~/hello-world()]$cat tsconfig.json 
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "module": "CommonJS"
+  }
+}
+```
+Sólo nos queda añadir un fichero con código TypeScript, para ello primero creamos el directorio *src* y luego lo creamos en el mismo con el nombre *index.ts*:
+```
+[~/hello-world()]$pwd
+/home/usuario/hello-world
+[~/hello-world()]$mkdir src
+[~/hello-world()]$cd src
+[~/hello-world/src()]$touch index.ts
+```
+¡Ya podemos crear nuestro primer Hola Mundo en TypeScript! Esto es, abrir el fichero que acabamos de crear (index.ts) y añadir las siguientes líneas en las que simplemente creamos un string con "Hola Mundo" y lo imprimos por pantalla: 
+```
+let myString: string = "Hola Mundo";
+console.log(myString);
+```
+Para compilar el código que acabamos de crear, basta con ejecutar el siguiente comando en la terminal de VSC:
+```
+[~/hello-world()]$tsc
+```
+Habiendo ejecutado la línea anterior, también abrá supuesto la creación del directorio *dist* y el fichero *index.js* automáticamente como lo habíamos indicado en pasos anteriores en las configuraciones de los ficheros *package.json* y *tsconfig.json*. Además, podemos comprobar los ficheros *./src/index.ts* y *./dist/index.js* para ver si hay alguna diferencia entre el código ".js" generado y el código ".ts" que hemos creado nosotros:
+```
+[~/hello-world()]$diff src/index.ts dist/index.js 
+1c1
+< let myString: string = "Hola Mundo";
+---
+> let myString = "Hola Mundo";
+```
+Como podemos, ver ambos códigos son prácticamente iguales, la única diferencia notable es la declaración de la variable *myString*.
 
 
+Finalmente, ejecutaremos el código JavaScript generado a partir del código TypeScript:
+```
+[~/hello-world()]$node dist/index.js
+Hola Mundo
+```
 
 
-
+## Conclusiones
+estoy cansada de escribir
 
 ## Bibliografía
 - [Guión de la Práctica](https://ull-esit-inf-dsi-2021.github.io/prct02-vscode/)
@@ -162,3 +213,5 @@ drwxrwxr-x  4 usuario usuario 4,0K feb 23 19:12 .
 - [Live Share Extension Pack](https://visualstudio.microsoft.com/es/services/live-share/)
 - [TypeScript](https://es.wikipedia.org/wiki/TypeScript)
 - [Introducción a TypeScript](https://desarrolloweb.com/articulos/introduccion-a-typescript.html)
+- [¿Qué es npm?](https://www.hostinger.es/tutoriales/que-es-npm#:~:text=Si%20ya%20tienes%20Node%20y,la%20inicializaci%C3%B3n%20de%20tu%20proyecto.&text=Este%20comando%20funciona%20como%20una,json%20de%20un%20proyecto.)
+- [Configurar un proyecto para usar TypeScript](https://desarrolloweb.com/articulos/configurar-proyecto-typescript.html)
