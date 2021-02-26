@@ -201,7 +201,8 @@ Hola Mundo
 
 
 ## Conclusiones
-estoy cansada de escribir
+
+
 
 ## Bibliografía
 - [Guión de la Práctica](https://ull-esit-inf-dsi-2021.github.io/prct02-vscode/)
