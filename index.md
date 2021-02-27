@@ -122,7 +122,7 @@ npm notice
 [~()]$tsc --version
 Version 4.1.5
 ```
-Tras haber instalado el compilador de TypeScript, comenzaremos nuestro pequeño proyecto. Para ello, bajo nuestro directorio */home/usuario* crearemos una carpeta con el nombre *hello-world*. Nos posicionamos en dicho directorio y ejecutamos el comando *npm init* el cual activará la inicialización de nuestro proyecto creando el fichero *package.json* que establecerá las dependencias de desarrollo y ejecución del proyecto a modo de paquetes de los que depende el proyecto actual:
+Tras haber instalado el compilador de TypeScript, comenzaremos nuestro pequeño proyecto. Para ello, bajo nuestro directorio */home/usuario* crearemos una carpeta con el nombre *hello-world*. Nos posicionamos en dicho directorio y ejecutamos el comando *npm init* el cual activará la inicialización de nuestro proyecto creando el fichero *package.json* que establecerá las dependencias de desarrollo y ejecución del proyecto a modo de paquetes de los que depende el proyecto actual: 
 ```
 [~()]$pwd
 /home/usuario
