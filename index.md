@@ -96,7 +96,8 @@ Como podemos observar, en *Session Details* nos detalla los participantes que ha
   ᐯ Sugested contacts (0)
      null...
 ```
-Esta sería la vista previa de una sesión colaborativa en VSCode en la que se está realizando una llamada de audio:
+Esta sería la vista previa de una sesión colaborativa en VSCode en la que se está realizando una llamada de audio:  
+
 ![Sesión colaborativa](https://raw.githubusercontent.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-Zarlie/gh-pages/img/vsc.png)
 
 
