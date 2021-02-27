@@ -59,7 +59,7 @@ Host iaas-dsiXX
 ```
 Una vez configurado el fichero, podremos comprobar si los cambios se han guardado correctamente con tan sólo volver a realizar los pasos que hicimos anteriormente, esto es: pulsaremos la tecla *F1* o bien *Ctrl + Shift + P*, escribimos *ssh* y volvemos a hacer click sobre la opción *Connect to Host...* y ahora deberíamos de visualizar el nombre de nuestra máquina.  Si pulsamos sobre ella, se debería de abrir una nueva ventana de VSCode donde se comenzara a establecer nuestra conexión SSH con la máquina virtual del IaaS, en la parte inferior del lateral izquierdo de la aplicación, debería de aparecer un recuadro verde con las letras ***Opening Remote...*** tardando apenas unos segundos en completarse la conexión.  
 
-En caso de que quisiéramos comprobar que, efectivamente se ha completado la conexión SSH satisfactoriamente, tenemos 2 formas de verlo: se puede comprobar a simple vista dentro del entorno de VSCode volviendo a ver el recuadro verde pero esta vez con las letras ***SSH: iaas-dsi36*** o bien podemos hacerlo abriendo una terminal en VSCode pulsando en la barra superior sobre *Terminal* o bien mediante la combinación de teclas *Ctrl + SHift +* ' y ejecutamos el siguiente comando:
+En caso de que quisiéramos comprobar que, efectivamente se ha completado la conexión SSH satisfactoriamente, tenemos 2 formas de verlo: se puede comprobar a simple vista dentro del entorno de VSCode volviendo a ver el recuadro verde pero esta vez con las letras ***SSH: iaas-dsi36*** o bien podemos hacerlo abriendo una terminal en VSCode pulsando en la barra superior sobre *Terminal* o bien mediante la combinación de teclas *Ctrl + Shift + ñ* y ejecutamos el siguiente comando:
 ```
 [~()]$ hostname
 iaas-dsi36
@@ -73,7 +73,7 @@ Para instalar esta extensión tenemos que seguir los mismos pasos que ya realiza
 
 Una vez las hayamos instalado debemos recargar la ventana del VSC. Ahora, abriremos nuestro proyecto como siempre y veremos que nos ha aparecido un nuevo símbolo en la barra lateral izquierda con forma de flecha. Si pulsamos sobre dicho símbolo nos llevará a una nueva pestaña donde podremos comenzar una sesión colaborativa iniciándola nosotros o uniéndonos a una ya existente.  
 
-En esta ocasión inciaremos nosotros mismos una nueva sesión de colaboración, esto lo haremos pulsando el botón de *Share* o bien en la barra inferior púrpura donde pone *Live Share*. Si es la primera vez que realizamos una sesión colaborativa, al pulsar sobre alguna de estas opciones nos pedirá iniciar sesión mediante una cuenta de Github o de Microsoft; elegimos la opción que más nos convenga y seguimos los pasos que nos indican sus respectivas páginas.
+En esta ocasión inciaremos nosotros mismos una nueva sesión de colaboración, esto lo haremos pulsando el botón de *Share* o bien en la barra inferior púrpura sobre el botón de *Live Share*. Si es la primera vez que realizamos una sesión colaborativa, al pulsar sobre alguna de estas opciones nos pedirá iniciar sesión mediante una cuenta de Github o de Microsoft; elegimos la opción que más nos convenga y seguimos los pasos que nos indican sus respectivas páginas.
 
 Habiendo iniciado sesión nos debe aparecer en el lateral izquierdo los detalles de nuestra sesión:
 ```
@@ -104,9 +104,9 @@ TypeScript es un lenguaje de programación de alto nivel libre y de código abie
 En definitiva, se trata esencialmente de un superconjunto de JavaScript que añade tipos estáticos y objetos basados en clases.
 
 ### **Primer proyecto en TypeScript** 
-Antes de comenzar con nuestro primer proyecto, debemos instalar la extensión ESLint. Esta extensión nos permitirá realizar comprobaciones de estilo sobre ficheros que incluyen código fuente en JavaScript y TypeScript. Para ello, nos posicionaremos una vez más en la pestaña de extensiones en la barra lateral izquierda del VSC e introduciremos *ESLint* en el buscador y pulsaremos en *Install*, al cabo de unos segundos estará lista para usar.  
+Antes de comenzar con nuestro primer proyecto, debemos instalar la extensión ESLint. Esta extensión nos permitirá realizar comprobaciones de estilo sobre ficheros que incluyen código fuente en JavaScript y TypeScript. Para ello, nos posicionaremos una vez más en la pestaña de extensiones en la barra lateral izquierda del VSCode, introduciremos *ESLint* en el buscador y pulsaremos en *Install*; al cabo de unos segundos estará lista para usar.  
 
-Ahora pasaremos a instalar el compilador de TypeScript mediante el gestor de paquetes NPM (Node Package Manager) en nuestra máquina virtual; pulsamos *F1* para abrir una terminal en VSC y ejecutamos el comando con la opción --global para asegurarnos de que se va a instalar el paquete de manera global:
+Ahora pasaremos a instalar el compilador de TypeScript mediante el gestor de paquetes NPM (Node Package Manager) en nuestra máquina virtual; pulsamos *Ctrl + Shift + ñ* para abrir una terminal en VSC y ejecutamos el comando con la opción --global para asegurarnos de que se va a instalar el paquete de manera global:
 ```
 [~()]$npm install --global typescript
 
