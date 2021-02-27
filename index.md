@@ -96,7 +96,7 @@ Como podemos observar, en *Session Details* nos detalla los participantes que ha
   ᐯ Sugested contacts (0)
      null...
 ```
-
+![Sesión colaborativa](https://raw.githubusercontent.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-Zarlie/gh-pages/img/vsc.png)
 
 
 ## Introducción a TypeScript 
