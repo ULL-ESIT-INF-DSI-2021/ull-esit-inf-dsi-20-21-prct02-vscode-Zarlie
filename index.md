@@ -187,7 +187,7 @@ Para compilar el código que acabamos de crear, basta con ejecutar el siguiente 
 ```
 [~/hello-world()]$tsc
 ```
-Habiendo ejecutado la línea anterior, también abrá supuesto la creación del directorio *dist* y el fichero *index.js* automáticamente como lo habíamos indicado en pasos anteriores en las configuraciones de los ficheros *package.json* y *tsconfig.json*. Además, podemos comprobar los ficheros *./src/index.ts* y *./dist/index.js* para ver si hay alguna diferencia entre el código ".js" generado y el código ".ts" que hemos creado nosotros:
+Ejecutar la línea anterior, también habrá supuesto la creación del directorio *dist* y el fichero *index.js* automáticamente como lo habíamos indicado en pasos anteriores en las configuraciones de los ficheros *package.json* y *tsconfig.json*. Además, podemos comprobar los ficheros *./src/index.ts* y *./dist/index.js* para ver si hay alguna diferencia entre el código ".js" generado y el código ".ts" que hemos creado nosotros:
 ```
 [~/hello-world()]$diff src/index.ts dist/index.js 
 1c1
@@ -206,7 +206,8 @@ Hola Mundo
 
 
 ## Conclusiones
-La realización de esta práctica ha sido bastante fácil y llevadera puesto que ya había trabajado un par de años con el editor de VSCode para la realización de los diversos proyectos de las prácticas del resto de asignaturas. Tanto las conexiones remotas con SSH o las sesiones colaborativas haciendo uso de Live Share me parecen de suma importancia en cualquier proyecto tanto profesional como personal puesto que pueden sernos de gran ayuda para afrontarlo y llevarlo a cabo satisfactoriamente.
+La realización de esta práctica ha sido bastante fácil y llevadera puesto que ya se había trabajado durante un par de años con el editor de VSCode y sus extensiones para la realización de los diversos proyectos de las prácticas del resto de asignaturas, por lo que no se ha presentado ningún problema durante el desarrollo de la práctica.  
+Cabe mencionar, que tanto las conexiones remotas con SSH o las sesiones colaborativas haciendo uso de Live Share me parecen de suma importancia en cualquier proyecto tanto profesional como personal puesto que pueden sernos de gran ayuda para afrontarlo y llevarlo a cabo satisfactoriamente.  
 Por otro lado, en lo que respecta a TypeScript nunca había realizado ningún proyecto en este lenguaje de programación pero ha sido bastante intuitivo y fácil de entender, desde la sintaxis hasta la compilación del código.
 
 
